@@ -3,39 +3,115 @@ Doctest File
     >>> url = "http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202/ref=sr_1_1?s=books&ie=UTF8&qid=1294839612&sr=1-1"
     >>> test = Parser(url)
     >>> test.title
-    'The Algorithm Design Manual'
+    'Title: The Algorithm Design Manual'
     >>> test.author
-    'Steven S. Skiena'
+    'Author(s): Steven S. Skiena'
+    >>> test.language
+    'English'
+    >>> test.pages
+    '752'
+    >>> test.edition
+    '2nd'
+    >>> test.date
+    'November 5, 2010'
+    >>> test.isbn10
+    '1849967202'
+    >>> test.isbn13
+    '978-1849967204'
+    >>> test.publisher
+    'Springer'
+    >>> test.dimensions
+    '9.1 x 7 x 1.9 inches'
+    >>> test.weight
+    '3.1 pounds'
+    >>> test.subjects
+    ['Computing: General', 'Algorithms & data structures', 'Combinatorics & graph theory', 'Mathematical theory of computation', 'Numerical analysis', 'Computers / Computer Science', 'Computers / Programming / General', 'MATHEMATICS / Combinatorics', 'Mathematics / Applied', 'Mathematics / Discrete Mathematics']
+    >>> url = "normal.html"
+    >>> test = Parser(url)
+    >>> test.title
+    'Title: The Algorithm Design Manual'
+    >>> test.author
+    'Author(s): Steven S. Skiena'
+    >>> test.language
+    'English'
+    >>> test.pages
+    '752'
+    >>> test.edition
+    '2nd'
+    >>> test.date
+    'November 5, 2010'
+    >>> test.isbn10
+    '1849967202'
+    >>> test.isbn13
+    '978-1849967204'
+    >>> test.publisher
+    'Springer'
+    >>> test.dimensions
+    '9.1 x 7 x 1.9 inches'
+    >>> test.weight
+    '3.1 pounds'
     >>> url = "http://www.amazon.com/Beginning-iPhone-Development-Exploring-iOS/dp/143023024X/ref=sr_1_3?s=books&ie=UTF8&qid=1301183297&sr=1-3"
     >>> test = Parser(url)
     >>> test.title
-    'Beginning iPhone 4 Development: Exploring the iOS SDK'
+    'Title: Beginning iPhone 4 Development: Exploring the iOS SDK'
     >>> test.author
-    'David Mark, Jack Nutting, Jeff LaMarche'
+    'Author(s): David Mark, Jack Nutting, Jeff LaMarche'
     >>> test.type_
     'Paperback'
-    >>> url = "http://www.amazon.com/Windows-Forensic-Analysis-Toolkit-ebook/dp/B002ZFXTXI/ref=tmm_kin_title_0?ie=UTF8&m=AG56TWVU5XWC2"
+    >>> url = "kid.html"
     >>> test = Parser(url)
     >>> test.title
-    'Windows Forensic Analysis DVD Toolkit'
+    'Title: A World Without Heroes (Beyonders)'
     >>> test.author
-    'Harlan Carvey'
-    >>> test.listPrice
-    '69.95'
-    >>> test.crrntPrice
-    '49.46'
-    >>> test.alsoBought
-    'http://www.amazon.com/File-System-Forensic-Analysis-ebook/dp/B000OZ0N9O/ref=pd_sim_kinc_1?ie=UTF8&m=AG56TWVU5XWC2'
-    'http://www.amazon.com/Malware-Analysts-Cookbook-Techniques-ebook/dp/B0047DWCMA/ref=pd_sim_kinc_2?ie=UTF8&m=AG56TWVU5XWC2'
-    'http://www.amazon.com/Windows-Registry-Forensics-Advanced-ebook/dp/B004JN0CDO/ref=pd_sim_kinc_3?ie=UTF8&m=AG56TWVU5XWC2'
-    'http://www.amazon.com/Hacking-The-Next-Generation-ebook/dp/B002OFAY5A/ref=pd_sim_kinc_4?ie=UTF8&m=AG56TWVU5XWC2'
-    'http://www.amazon.com/Hacking-Exposed-Computer-Forensics-ebook/dp/B002R0JXF4/ref=pd_sim_kinc_5?ie=UTF8&m=AG56TWVU5XWC2'
-    'http://www.amazon.com/Malware-Forensics-Investigating-Analyzing-ebook/dp/B001KU7XOK/ref=pd_sim_kinc_6?ie=UTF8&m=AG56TWVU5XWC2'
-    >>> url = "http://www.amazon.com/Windows-Forensic-Analysis-Toolkit-ebook/dp/B002ZFXTXI/ref=tmm_kin_title_0?ie=UTF8&m=AG56TWVU5XWC2"
+    'Author(s): Brandon Mull'
+    >>> test.language
+    'English'
+    >>> test.pages
+    '464'
+    >>> test.edition
+    'None'
+    >>> test.date
+    'March 15, 2011'
+    >>> test.isbn10
+    '9781416997924'
+    >>> test.isbn13
+    '978-1416997924'
+    >>> test.publisher
+    'Aladdin'
+    >>> test.dimensions
+    '8.3 x 5.8 x 1.6 inches'
+    >>> url="http://www.amazon.com/Abundance-Babies-Month-Silhouette-Special/dp/0373244223/ref=sr_1_25?s=books&ie=UTF8&qid=1301366894&sr=1-25"
     >>> test = Parser(url)
-    >>> test.avgReview
-    '5.0'
-    >>> test.numReviews
-    '16'
+    >>> test.edition
+    'Special'
+    >>> test.isbn10
+    '9780373244225'
+    >>> test.isbn13
+    '978-0373244225'
+    >>> url = "kindle.html"
+    >>> test = Parser(url)
+    >>> test.title
+    'Title: Windows Forensic Analysis DVD Toolkit'
+    >>> test.author
+    'Author(s): Harlan Carvey'
+    >>> test.language
+    'English'
+    >>> test.pages
+    '512'
+    >>> test.edition
+    '2'
+    >>> test.date
+    'May 28, 2009'
+    >>> test.isbn10
+    'None'
+    >>> test.isbn13
+    'None'
+    >>> test.type_
+    'Kindle Edition'
+    >>> test.publisher
+    'Syngress'
+    >>> test.dimensions
+    'None'
+    >>> test.weight
+    'None'
     
-
